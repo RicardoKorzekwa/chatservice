@@ -1,0 +1,4 @@
+docker-compose up -d
+make migrate
+docker-compose exec chatservice bash
+go run cdm/chatservice/main.go
